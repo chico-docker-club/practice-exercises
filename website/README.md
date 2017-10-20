@@ -10,8 +10,7 @@ in index.html.
 
 * Create a Dockerfile for the oodle website
 * Dockerfile must make use of:
-** LABEL or MAINTAINER
-** EXPOSE
+  LABEL or MAINTAINER, EXPOSE
 * Image must be on Docker Hub
 * Site must work as expected
 * Site must be reachable on port 8080
