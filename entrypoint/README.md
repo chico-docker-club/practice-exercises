@@ -10,7 +10,8 @@ proper conversion and outputs the results.
 
 * Create a Dockerfile for one of the oodle applications
 * Dockerfile must make use of:
-** ENTRYPOINT
-** LABEL or MAINTAINER
+  ENTRYPOINT
+  LABEL or MAINTAINER
 * Image must be on Docker Hub
+* Oodle should run as an executable
 * Oodle must work as expected
