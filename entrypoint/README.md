@@ -13,4 +13,5 @@ proper conversion and outputs the results.
   ENTRYPOINT
   LABEL or MAINTAINER
 * Image must be on Docker Hub
+* Oodle should run as an executable
 * Oodle must work as expected
