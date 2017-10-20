@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron bg-info text-white" style="color:#FFF;background-color:#5bc0de;">
+				<h1 class="text-center" style="font-size:10em;font-family:Lobster;">Oodle</h1>
+			</div>
+			<div class="form-group">
+				<input type="text" id="name" class="form-control text-center" autocomplete="off" placeholder="Enter name here">
+			</div>
+			<div class="form-group">
+				<h1 class="text-center"><span id="result" class="label label-info" style="text-transform:capitalize;"></span></h1>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<script>
+			setInterval(function(){$("#result").html((($("#name").val()).toLowerCase()).replace(/a|e|i|o|u|y/gi,"oodle"));},10);
+		</script>
+	</footer>
+</html>
