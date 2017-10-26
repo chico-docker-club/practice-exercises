@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  vote:
+    build: ./vote
+    command: python app.py
+    networks:
+      - front-tier
+      - back-tier
+
+  result:
+    build: ./result
+    command: nodemon --debug server.js
+    networks:
+      - front-tier
+      - back-tier
+
+  worker:
+    build:
+      context: ./worker
+    networks:
+      - back-tier
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    networks:
+      - back-tier
+
+  db:
+    image: postgres:9.4
+    container_name: db
+    networks:
+      - back-tier
+
+networks:
+  front-tier:
+  back-tier:
